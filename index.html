@@ -7,29 +7,8 @@
         <script type="text/javascript" src="https://unpkg.com/popper.js@1.12.3"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-        <style media="screen">
-            .page-name {
-                margin: 0.5em 2.5em;
-                color: rgb(18, 96, 101);
-                font-size: 2.5em;
-            }
-            #text-box {
-                position:fixed;
-                top: 50%;
-                left: 50%;
-                width:30em;
-                height:18em;
-                margin-top: -9em; /*set to a negative number 1/2 of your height*/
-                margin-left: -15em; /*set to a negative number 1/2 of your width*/
-            }
-        </style>
-        <script type="text/javascript">
-            $(window).on('load', function () {
-                $('#play-btn').on('click', function () {
-                    window.location.href = './player' + '#' + $('#m3u8-placeholder')[0].value;
-                });
-            })
-        </script>
+        <link rel="stylesheet" href="home.css">
+        <script type="text/javascript" src="main.js"></script>
     </head>
     <body>
         <div class="col-lg-6" id="text-box">
