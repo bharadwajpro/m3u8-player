@@ -1,3 +1,5 @@
+var videoObj = $('#video').eq(0);
+
 function playM3u8(url){
   if(Hls.isSupported()) {
       var video = document.getElementById('video');
@@ -13,5 +15,28 @@ function playM3u8(url){
     }
 }
 
+function playPause() {
+    videoObj.paused?videoObj.play():videoObj.pause();
+}
+
+function volumeUp() {
+    videoObj.volume+=0.1;
+}
+
+function volumeUp() {
+    videoObj.volume-=0.1;
+}
+
+function seek(sec) {
+    videoObj.currentTime+=sec;
+}
+
 playM3u8(window.location.href.split("#")[1])
-$('#video').on('click', function(){this.paused?this.play():this.pause();});
+$(window).on('load', function () {
+    $('#video').on('click', function(){this.paused?this.play():this.pause();});
+    Mousetrap.bind('space', playPause);
+    Mousetrap.bind('up', volumeUp);
+    Mousetrap.bind('down', volumeDown);
+    Mousetrap.bind('right', seek(5));
+    Mousetrap.bind('left', seek(-5));
+});
