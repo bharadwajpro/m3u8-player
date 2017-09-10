@@ -34,6 +34,16 @@ function seekLeft() {
     video.currentTime-=5;
 }
 
+function vidFullscreen() {
+    if (video.requestFullscreen) {
+      video.requestFullscreen();
+  } else if (video.mozRequestFullScreen) {
+      video.mozRequestFullScreen();
+  } else if (video.webkitRequestFullscreen) {
+      video.webkitRequestFullscreen();
+    }
+}
+
 playM3u8(window.location.href.split("#")[1])
 $(window).on('load', function () {
     $('#video').on('click', function(){this.paused?this.play():this.pause();});
@@ -42,4 +52,5 @@ $(window).on('load', function () {
     Mousetrap.bind('down', volumeDown);
     Mousetrap.bind('right', seekRight);
     Mousetrap.bind('left', seekLeft);
+    Mousetrap.bind('f', vidFullscreen);
 });
