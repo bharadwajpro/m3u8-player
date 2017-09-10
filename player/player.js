@@ -26,8 +26,12 @@ function volumeDown() {
     video.volume-=0.1;
 }
 
-function seek(sec) {
-    video.currentTime+=sec;
+function seekRight() {
+    video.currentTime+=5;
+}
+
+function seekLeft() {
+    video.currentTime-=5;
 }
 
 playM3u8(window.location.href.split("#")[1])
@@ -36,6 +40,6 @@ $(window).on('load', function () {
     Mousetrap.bind('space', playPause);
     Mousetrap.bind('up', volumeUp);
     Mousetrap.bind('down', volumeDown);
-    Mousetrap.bind('right', seek(5));
-    Mousetrap.bind('left', seek(-5));
+    Mousetrap.bind('right', seekRight);
+    Mousetrap.bind('left', seekLeft);
 });
