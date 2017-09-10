@@ -1,4 +1,4 @@
-var videoObj = $('#video').eq(0);
+var videoObj = $('#video');
 
 function playM3u8(url){
   if(Hls.isSupported()) {
@@ -23,7 +23,7 @@ function volumeUp() {
     videoObj.volume+=0.1;
 }
 
-function volumeUp() {
+function volumeDown() {
     videoObj.volume-=0.1;
 }
 
