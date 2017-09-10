@@ -14,4 +14,4 @@ function playM3u8(url){
 }
 
 playM3u8(window.location.href.split("#")[1])
-$('#video').click(function(){this.paused?this.play():this.pause();});
+$('#video').on('click', function(){this.paused?this.play():this.pause();});
