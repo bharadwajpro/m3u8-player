@@ -1,0 +1,9 @@
+# m3u8-player
+M3U8 Player in browser. Play any live stream m3u8 link with this website at http://bharadwajpro.github.io/m3u8-player
+If you want to extract m3u8 files from live streams. You can use `youtube-dl -F <video-url>` to display all formats available
+and then type `youtube-dl -f <itag> -g <video-url>` for the direct link. Paste it in the website mentioned above and play it.
+If it doesn't work, then raise an issue.
+  
+If you want live streams legally then visit this repo - https://github.com/notanewbie/LegalStream
+
+This website is tested on Google Chrome and Firefox desktop web browsers. Not tested on android and iOS. Raise an issue if it doesn't work.
