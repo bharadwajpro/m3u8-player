@@ -12,6 +12,14 @@ function playM3u8(url){
       });
       document.title = url
     }
+	else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+		video.src = url;
+		video.addEventListener('canplay',function() {
+		  video.play();
+		});
+		video.volume = 0.3;
+		document.title = url;
+  	}
 }
 
 function playPause() {
