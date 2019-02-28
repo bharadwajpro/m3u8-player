@@ -1,5 +1,5 @@
 # m3u8-player
-M3U8 Player in browser. Play any live stream m3u8 link with this webapp at http://bharadwajpro.github.io/m3u8-player
+M3U8 Player in browser. Play any live stream m3u8 link with this webapp at https://bharadwajpro.github.io/m3u8-player
 
 I created this website because VLC is unstable in playing live streams. It buffers a lot.
 
@@ -14,3 +14,5 @@ This website is tested on Google Chrome and Firefox desktop web browsers. Not te
 * `up` and `down` - Volume
 * `left` and `right` - Seek by 5 secs
 * `f` - Full screen
+## Known issues
+* The page is served over `https`. So if the stream url is not `https` but `http`, the browser may throw a warning. Make sure you ignore that visible at the top right of the address bar on Google Chrome.
