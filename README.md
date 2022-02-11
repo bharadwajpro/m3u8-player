@@ -15,4 +15,5 @@ This website is tested on Google Chrome and Firefox desktop web browsers. Not te
 * `left` and `right` - Seek by 5 secs
 * `f` - Full screen
 ## Known issues
-* The page is served over `https`. So if the stream url is not `https` but `http`, the browser may throw a warning. Make sure you ignore that visible at the top right of the address bar on Google Chrome.
+* The page is served over `https`. So if the stream url is not `https` but `http`, the browser may throw a warning. The content fails to load. Disable web security in Chrome to get around this.
+* CORS issue - If the media server blocks other IPs saying CORS. You might have to install this chrome extension to get around this - https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf
