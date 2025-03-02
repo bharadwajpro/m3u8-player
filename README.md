@@ -17,6 +17,7 @@ This website is tested on Google Chrome and Firefox desktop web browsers. Not te
 -   `up` and `down` - Volume
 -   `left` and `right` - Seek by 5 secs
 -   `f` - Full screen
+-   `m` - Mute
 
 ## Known issues
 
