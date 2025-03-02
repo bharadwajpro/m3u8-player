@@ -41,6 +41,10 @@ function seekLeft() {
     video.currentTime -= 5;
 }
 
+function toggleMute() {
+    video.muted = !video.muted;
+}
+
 function vidFullscreen() {
     if (video.requestFullscreen) {
         video.requestFullscreen();
@@ -62,4 +66,5 @@ $(window).on('load', function () {
     Mousetrap.bind('right', seekRight);
     Mousetrap.bind('left', seekLeft);
     Mousetrap.bind('f', vidFullscreen);
+    Mousetrap.bind('m', toggleMute);
 });
